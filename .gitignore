@@ -26,6 +26,11 @@ gitignored/Site/Site/settings.py
 __pycache__/
 
 #
+# For kate swap files
+#
+*.kate-swp
+
+#
 # For vim temporary files
 #
 *.swp
