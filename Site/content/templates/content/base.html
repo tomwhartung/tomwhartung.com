@@ -4,7 +4,7 @@
  {% block head %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>
    {% if title %}
     {{ title }}
@@ -17,18 +17,11 @@
   <meta name="p:domain_verify" content="fdb068e61b8c4f7e8146fadc1d1034c6"/>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87860502-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-87860502-4');
-  </script>
+  <!-- TBD !>
 
   {% load static %}
   <!-- Font Awesome - get errors when try to use local file-->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="{% static 'content/css/bootstrap.min.css' %}"
@@ -46,6 +39,7 @@
 
 <body>
  {% block navbar %}
+ <h1 class="text-center">TomWHartung.com</h1>
  {% endblock %}
 
 {% block content %}
@@ -79,15 +73,19 @@
  <script>
  </script>
  <!-- scripts needed for Material Design Bootstrap -->
- <script src="{% static 'content/js/jquery-3.3.1.min.js' %}"
+ <!-- JQuery -->
+ <script src="{% static 'content/js/jquery.min.js' %}"
          type="text/javascript"></script>
+ <!-- Bootstrap tooltips -->
  <script src="{% static 'content/js/popper.min.js' %}"
          type="text/javascript"></script>
- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <!-- Bootstrap core JavaScript -->
  <script src="{% static 'content/js/bootstrap.min.js' %}"
          type="text/javascript"></script>
+ <!-- MDB core JavaScript -->
  <script src="{% static 'content/js/mdb.min.js' %}"
          type="text/javascript"></script>
+ <!-- For my cusTOMizations -->
  <script src="{% static 'content/js/tomwhartung.js' %}"
          type="text/javascript"></script>
 {% endblock %}
